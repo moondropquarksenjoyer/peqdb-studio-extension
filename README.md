@@ -8,11 +8,11 @@ Includes a local music player with waveform and spectrum tools for preparing per
 
 ## Downloads
 
-**[Download for Chrome / Edge / Brave](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-chrome.zip)**
+**[Download for Chrome / Edge / Brave](https://github.com/moondropquarksenjoyer/peqdb-studio-extension/releases/download/v0.2.26/peqdb-mini-chrome.zip)**
 
-**[Download for Firefox](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-firefox.zip)**
+**[Download for Firefox](https://github.com/moondropquarksenjoyer/peqdb-studio-extension/releases/download/v0.2.26/peqdb-mini-firefox.zip)**
 
-[View the v0.2.26 release](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/tag/v0.2.26)
+[View the v0.2.26 release](https://github.com/moondropquarksenjoyer/peqdb-studio-extension/releases/tag/v0.2.26)
 
 These are manual-install playtest builds. Download the browser file above; GitHub’s **Code → Download ZIP** is not the extension package.
 
@@ -93,7 +93,7 @@ Local music and listening results stay on your device. Headphone catalogue and t
 
 ## Feedback
 
-[Report a bug or suggest a feature](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/issues)
+[Report a bug or suggest a feature](https://github.com/moondropquarksenjoyer/peqdb-studio-extension/issues)
 
 For bugs, include your browser version, operating system, steps to reproduce and whether you were using browser audio or local music.
 
@@ -102,3 +102,6 @@ For bugs, include your browser version, operating system, steps to reproduce and
 This is an unofficial project, not affiliated with or endorsed by PEQdB.
 
 The extension uses AutoEQ C/WASM and other third-party components. Their source and license notices are included in the release’s extension source package.
+## License
+
+This project is licensed under the [MIT License](LICENSE).
