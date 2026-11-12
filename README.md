@@ -1,3 +1,17 @@
+## Very early prototype
+
+This is an experimental playtest build. Expect bugs, unfinished features and changes between versions. It is not ready for everyday, dependable use.
+
+- **Start at a low listening volume.** Audio bugs may cause unexpected level changes, distortion or dropouts. If playback goes silent, avoid turning the volume up—it could resume unexpectedly.
+- **Back up your EQ presets before updating.** Settings, music-library links and saved results may need to be restored or recreated.
+- **Browser support varies.** Some websites, protected media and audio formats may not work correctly.
+- **Review the permissions.** The extension requests broad website access to process browser audio.
+- **Installation is currently manual.** Chrome uses developer mode; the unsigned Firefox build must be loaded again after restarting Firefox.
+
+This is an unofficial project, not affiliated with or endorsed by PEQdB. Feedback and bug reports are welcome.
+
+
+
 ## Installation
 
 ### Chrome, Edge and Brave
