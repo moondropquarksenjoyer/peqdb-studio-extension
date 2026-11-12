@@ -1,48 +1,104 @@
-## Very early prototype
+# PEQdB Studio Browser Extension
 
-This is an experimental playtest build. Expect bugs, unfinished features and changes between versions. It is not ready for everyday, dependable use.
+An unofficial PEQdB companion for Chrome and Firefox. Apply EQ to browser audio, save presets, compare target curves and run blind listening tests using browser playback or your own music.
 
-- **Start at a low listening volume.** Audio bugs may cause unexpected level changes, distortion or dropouts. If playback goes silent, avoid turning the volume up—it could resume unexpectedly.
-- **Back up your EQ presets before updating.** Settings, music-library links and saved results may need to be restored or recreated.
-- **Browser support varies.** Some websites, protected media and audio formats may not work correctly.
-- **Review the permissions.** The extension requests broad website access to process browser audio.
-- **Installation is currently manual.** Chrome uses developer mode; the unsigned Firefox build must be loaded again after restarting Firefox.
+Includes a local music player with waveform and spectrum tools for preparing personal listening tests.
 
-This is an unofficial project, not affiliated with or endorsed by PEQdB. Feedback and bug reports are welcome.
+**Early prototype — shared for testing and feedback.** Features and UI are still being developed, so expect bugs and rough edges. Suggestions and bug reports are welcome.
 
+## Downloads
 
+**[Download for Chrome / Edge / Brave](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-chrome.zip)**
+
+**[Download for Firefox](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-firefox.zip)**
+
+[View the v0.2.26 release](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/tag/v0.2.26)
+
+These are manual-install playtest builds. Download the browser file above; GitHub’s **Code → Download ZIP** is not the extension package.
+
+## Features
+
+- Parametric EQ for accessible browser audio and local music.
+- PEQdB headphone measurements, target curves and AutoEQ.
+- Live filter editing and saved EQ presets.
+- Quick comparisons between built-in or imported target curves.
+- Blind preference tests with pools of 2–12 targets.
+- Local music playback, playlists and individual song imports.
+- Zoomable waveforms, spectrum analysis and guided listening-passage preparation.
+- Toolbar controls, a docked sidebar/side panel and an optional separate window.
 
 ## Installation
 
 ### Chrome, Edge and Brave
 
-[**Download Chrome ZIP**](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-chrome.zip)
-
-1. Download and extract the ZIP.
-2. Open `chrome://extensions` — or `edge://extensions` / `brave://extensions`.
+1. Download **peqdb-mini-chrome.zip** and extract it.
+2. Open your browser’s extensions page:
+   - Chrome: `chrome://extensions`
+   - Edge: `edge://extensions`
+   - Brave: `brave://extensions`
 3. Enable **Developer mode**.
-4. Click **Load unpacked** and select the extracted folder containing `manifest.json`.
-5. Pin the extension from the puzzle-piece menu.
-6. Reload any already-open music or video pages.
+4. Click **Load unpacked**.
+5. Select the extracted folder that directly contains `manifest.json`.
+6. Pin the extension from the puzzle-piece menu.
+7. Reload any already-open music or video pages.
 
 Keep the extracted folder in place after installing.
 
 ### Firefox
 
-[**Download Firefox ZIP**](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/releases/download/v0.2.26/peqdb-mini-firefox.zip)
-
 Requires **Firefox 142 or newer**.
 
-1. Download the ZIP without extracting it.
+1. Download **peqdb-mini-firefox.zip** without extracting it.
 2. Open `about:debugging#/runtime/this-firefox`.
-3. Click **Load Temporary Add-on…** and select the downloaded ZIP.
-4. Pin the extension from the puzzle-piece menu.
-5. Reload any already-open music or video pages.
+3. Click **Load Temporary Add-on…**.
+4. Select the downloaded ZIP.
+5. Pin the extension from the puzzle-piece menu.
+6. Reload any already-open music or video pages.
 
-**This unsigned playtest build is temporary. You must load it again after restarting Firefox.**
+**The Firefox build is unsigned and temporary. Load it again after restarting Firefox.**
 
-### First use
+## Getting started
 
-The first launch downloads the headphone catalogue. Start playback, select your headphone and target, then run **AutoEQ**.
+The first launch downloads the headphone catalogue.
 
-For local music, open **Music → Add songs**. For controls that stay open, choose **··· → Dock in browser**.
+1. Start playback on a supported page, or open **Music → Add songs**.
+2. Select your headphone measurement and a target.
+3. Run **AutoEQ**, or edit filters manually.
+4. Save your settings as an EQ preset.
+
+Use **Quick Compare** to switch between targets. Choose **Blind test** to compare without seeing target identities.
+
+For repeatable excerpts from local music, open **Music → Prepare passages**. Preparation is optional—you can also test the current song directly.
+
+Choose **··· → Dock in browser** for controls that stay open, or **Pop out** for a resizable window.
+
+## Spectrum settings
+
+The default is **60 FPS / Standard response**.
+
+- **Maximum spectrum FPS** controls the requested drawing and update rate.
+- **Spectrum response** selects Standard, Fast or Fastest. Faster modes react sooner but lose some bass-frequency detail.
+
+The optional readout separates drawn FPS from fresh spectrum updates. Actual rates depend on your display, browser and audio device.
+
+## Testing notes
+
+- Start at a low listening volume. Audio bugs may cause unexpected level changes, distortion or dropouts.
+- If playback goes silent, pause it before raising the volume.
+- Export your EQ presets before updating or removing the extension.
+- Some websites, protected media and audio formats may not work.
+- The extension requests broad website access to process accessible page audio.
+
+Local music and listening results stay on your device. Headphone catalogue and target data are fetched from PEQdB and cached locally.
+
+## Feedback
+
+[Report a bug or suggest a feature](https://github.com/ogjuggy/PEQDBSTUDIOBROWSEREXTENSION/issues)
+
+For bugs, include your browser version, operating system, steps to reproduce and whether you were using browser audio or local music.
+
+## Attribution
+
+This is an unofficial project, not affiliated with or endorsed by PEQdB.
+
+The extension uses AutoEQ C/WASM and other third-party components. Their source and license notices are included in the release’s extension source package.
